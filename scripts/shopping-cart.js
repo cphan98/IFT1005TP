@@ -208,7 +208,7 @@ showItems();
     $('#reset').click(function(event) {
         event.preventDefault();
         
-        if (confirm('Voulez-vous vider le produit du panier?')) {
+        if (confirm('Voulez-vous supprimer tous les produits du panier?')) {
           localStorage.clear();
           showItems();
           showCount();
