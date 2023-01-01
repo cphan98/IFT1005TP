@@ -1,6 +1,3 @@
-// Jianxin You 20134401
-// Hoang-Thi-Thi Cynthia Phan 20220019
-
 // Add a custom method for validating the credit card expiry
 $.validator.addMethod("creditCardExpiry", function(value, element) {
     // Use a regular expression to check that the value is in the mm/yy format
