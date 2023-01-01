@@ -170,7 +170,7 @@ showItems();
 
 
     $('.btn--plus-minus[name="delete"]').click(function(event) {
-    if (confirm('Voulez-vous supprimer le produit du panier?')) {
+    if (confirm('Voulez vous supprimer le produit du panier')) {
         let row = $(this).closest('tr');
         let name = row.find('.links').text();
         let priceText = row.find('.column-price');
@@ -205,10 +205,11 @@ showItems();
     $('#reset').click(function(event) {
         event.preventDefault();
         
-        if (confirm('Voulez-vous supprimer tous les produits du panier?')) {
+        if (confirm('Voulez vous supprimer le produit du panier')) {
           localStorage.clear();
           showItems();
           showCount();
         }
     });
+
 
