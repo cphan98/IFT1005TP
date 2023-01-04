@@ -24,7 +24,7 @@ localStorage.setItem("confirmation_id",JSON.stringify(id));
 
 
 for (let i = 0; i < localStorage.length; i++) {
-    if (localStorage.key(i) != 'confimation_id'){
+    if (localStorage.key(i) != 'confirmation_id'){
         localStorage.removeItem(localStorage.key(i));
     }
 }

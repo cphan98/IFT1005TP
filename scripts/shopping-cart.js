@@ -20,7 +20,7 @@ function showItems() {
         document.querySelector('.empty-cart-message').style.display = 'block';
     }
     else{       
-    
+        console.log(shoppingList)
         shoppingList.sort(function(a, b) {
             let idA = a.name.toUpperCase();
             let idB = b.name.toUpperCase();
